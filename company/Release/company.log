@@ -1,0 +1,17 @@
+﻿Построение начато 09.04.2013 23:46:57.
+     1>Проект "C:\study\programs\prog_2sem\programs\company\company\company.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Release\company.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         Для всех выходных данных обновления не требуется.
+         company.vcxproj -> C:\study\programs\prog_2sem\programs\company\Release\company.exe
+       FinalizeBuildStatus:
+         Файл "Release\company.unsuccessfulbuild" удаляется.
+         Обращение к "Release\company.lastbuildstate".
+     1>Построение проекта "C:\study\programs\prog_2sem\programs\company\company\company.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.05

@@ -1,0 +1,136 @@
+copy of matrix1:
+17 -5 11 
+0 0 0 
+20 11 0 
+
+copy of matrix1:
+17 -5 11 
+0 0 0 
+20 11 0 
+
+copy of matrix2:
+2 -6 1 
+1 -8 9 
+2 1 -2 
+
+matrix1 after std::swap(matrix1, matrix2):
+2 -6 1 
+1 -8 9 
+2 1 -2 
+
+matrix1 after matrix1.Swap(matrix2):
+17 -5 11 
+0 0 0 
+20 11 0 
+
+Testing iterators:
+
+Nonzero matrix1's elements (using Iterator):
+row0 column0: 17
+row0 column1: -5
+row0 column2: 11
+row2 column0: 20
+row2 column1: 11
+
+Nonzero matrix1's elements (using ConstIterator):
+row0 column0: 17
+row0 column1: -5
+row0 column2: 11
+row2 column0: 20
+row2 column1: 11
+
+Iterator matrix1.Begin() value: 17
+ConstIterator matrix1.Begin() value: 17
+Iterator matrix1.Begin() -> ConstIterator (using =) value: 17
+Iterator matrix1.Begin() -> ConstIterator (using copy construtor) value: 17
+
+matrix1.Begin() == matrix1.End(): 0
+matrix1.Begin() != matrix1.End(): 1
+matrix1.Begin() == matrix1.End(): 0
+matrix1.Begin() != matrix1.End(): 1
+matrix1.Begin() == matrix1.Begin(): 1
+matrix1.End() != matrix1.End(): 0
+
+Testing comparison:
+
+matrix1 < matrix2: 0
+matrix1 == matrix2: 0
+matrix1 != matrix2: 1
+matrix1 <= matrix2: 0
+matrix1 > matrix2: 0
+matrix1 >= matrix2: 0
+
+Testing arithmetic:
+
+-matrix1:
+-17 5 -11 
+0 0 0 
+-20 -11 0 
+
+matrix1 + matrix2:
+19 -11 12 
+1 -8 9 
+22 12 -2 
+
+matrix1 - matrix2:
+15 1 10 
+-1 8 -9 
+18 10 2 
+
+matrix1 * matrix2:
+51 -51 -50 
+0 0 0 
+51 -208 119 
+
+matrix2 * matrix1:
+54 1 22 
+197 94 11 
+-6 -32 22 
+
+matrix1 += matrix2:
+19 -11 12 
+1 -8 9 
+22 12 -2 
+
+matrix1 -= matrix2:
+17 -5 11 
+0 0 0 
+20 11 0 
+
+matrix3 *= matrix1:
+54 1 22 
+197 94 11 
+-6 -32 22 
+
+factor: 2
+
+matrix1 * factor:
+34 -10 22 
+0 0 0 
+40 22 0 
+
+factor * matrix1:
+34 -10 22 
+0 0 0 
+40 22 0 
+
+matrix1 *= factor:
+34 -10 22 
+0 0 0 
+40 22 0 
+
+transpose matrix2:
+2 1 2 
+-6 -8 1 
+1 9 -2 
+
+transpose matrix2:
+2 -6 1 
+1 -8 9 
+2 1 -2 
+
+inverse matrix2:
+-0.0786517 0.123596 0.516854 
+-0.224719 0.0674157 0.191011 
+-0.191011 0.157303 0.11236 
+
